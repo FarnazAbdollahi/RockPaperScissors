@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <title> Rock Paper Scissors </title>
+    </head>     
+    <body>   
+
+        <h1> Rock, Paper, Scissors </h1><br>
+        <div id="box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div id="start">
+                            <button class="btn btn-default" id="btn" onclick="startGame();"> Click to Start </button><br>
+                            <img src="./images/1.gif" alt="start" id="main">
+                            <span id="set">You have </span><span id="gameSet"> 5 </span><span id="set1"> sets left</span>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div id="resultBox"><br><br>
+                            <button class="btn btn-default" onclick="playAgain();"> Play Again! </button><hr>
+                            <span id="result"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+
+                        <div id="gameBox">
+                            <div class="row" id="opBox">
+                                <div id="options">
+                                    <button class="btn btn-default" onclick="play(1);" id="rock"><img src="./images/rock.png"><br> Rock </button>
+                                    <button class="btn btn-default" onclick="play(2);" id="paper"><img src="./images/paper.png"><br> Paper </button>
+                                    <button class="btn btn-default" onclick="play(3);" id="scissors"><img src="./images/scissors.png"><br> Scissors </button>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row" id="scoreBox">
+                                <h3> Score Box </h3><br>
+                                <div class="col-md-4 computer">
+                                    <span id="computerScore" class="badge"> 0 </span><br>
+                                    <span> computer  </span><br>
+                                </div>
+                                <div class="col-md-4 tie">
+                                    <span id="tieScore" class="badge"> 0 </span><br>
+                                    <span> tie </span><br>
+                                </div>
+                                <div class="col-md-4 player">
+                                    <span id="playerScore" class="badge"> 0 </span><br>
+                                    <span> player </span><br>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="gamePlay">
+                                <div class="col-md-4" id="computer"><br> Computer <hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                </div>
+                                <div class="col-md-4" id="setWinner"><br> Winner of Set <hr>
+                                    <span class="s"></span><hr>
+                                    <span class="s"></span><hr>
+                                    <span class="s"></span><hr>
+                                    <span class="s"></span><hr>
+                                    <span class="s"></span>
+                                </div>
+                                <div class="col-md-4" id="player"><br> Player <hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                    <img src=""><hr>
+                                </div>
+                            </div>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+            
+        </div>
+    <script src="./js/main.js"></script> 
+    </body>
+</html>
